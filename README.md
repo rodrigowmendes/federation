@@ -7,10 +7,15 @@ A REST API for United Federation Of Planets database, including known planets, s
 ## Endpoints
 
 Starship classes: /starshipclasses/
+
 Starships: /starships/
+
 Crewmen: /crewmen/
+
 Languages: /languages/
+
 Planets: /planets/
+
 Species: /species/
 
 
