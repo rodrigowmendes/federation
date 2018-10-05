@@ -6,16 +6,16 @@ A REST API for United Federation Of Planets database, including known planets, s
 
 ## Endpoints
 
-Starship classes: /starshipclasses/
+Starship classes: starfleet/starshipclasses/
 
-Starships: /starships/
+Starships: starfleet/starships/
 
-Crewmen: /crewmen/
+Crewmen: starfleet/crewmen/
 
-Languages: /languages/
+Languages: starfleet/languages/
 
-Planets: /planets/
+Planets: starfleet/planets/
 
-Species: /species/
+Species: starfleet/species/
 
 
