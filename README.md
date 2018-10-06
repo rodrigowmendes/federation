@@ -18,4 +18,23 @@ Planets: starfleet/planets/
 
 Species: starfleet/species/
 
+## Usage
+
+Install pip3:
+
+`apt install python3-pip` 
+
+Then run after clone the repository:
+
+``` bash
+cd federation
+
+pip3 install requirements.txt`
+
+python3 manage.py migrate # To migrate the database
+
+python3 manage.py runserver
+```
+
+
 
