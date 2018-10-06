@@ -26,15 +26,14 @@ Install pip3:
 
 Then run after clone the repository:
 
-``` bash
-cd federation
+`cd federation`
 
-pip3 install requirements.txt`
+`pip3 install requirements.txt`
 
-python3 manage.py migrate # To migrate the database
+`python3 manage.py migrate` # To migrate the database
 
-python3 manage.py runserver
-```
+`python3 manage.py runserver`
+
 
 
 
