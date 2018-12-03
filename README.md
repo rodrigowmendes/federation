@@ -1,36 +1,20 @@
 # Federation
 
-A REST API for United Federation Of Planets database, including known planets, species, languages, starships of the Starfleet, their classes and crewmen.
+Uma API REST para um banco de dados hipotético da Federação Dos Planetas Unidos, de Star Trek.
 
-![Starfleet Model](https://github.com/rodrigowmendes/federation/blob/master/starfleet/static/images/starfleet_uml.png)
+## Uso:
 
-## Endpoints
-
-Starship classes: starfleet/starshipclasses/
-
-Starships: starfleet/starships/
-
-Crewmen: starfleet/crewmen/
-
-Languages: starfleet/languages/
-
-Planets: starfleet/planets/
-
-Species: starfleet/species/
-
-## Usage
-
-Install pip3:
+Instale pip3:
 
 `apt install python3-pip` 
 
-Then run after clone the repository:
+Então, depois de clonar o repositório para o seu computador:
 
 `cd federation`
 
 `pip3 install requirements.txt`
 
-`python3 manage.py migrate` # To migrate the database
+`python3 manage.py migrate` # Para migrar o banco de dados
 
 `python3 manage.py runserver`
 
