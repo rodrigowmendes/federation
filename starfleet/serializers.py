@@ -1,29 +1,17 @@
-from .models import StarshipClass, Starship, Planet, Idiom, Species, Crewman
+from .models import Starship, Planet, Species, Crewman
 from rest_framework import serializers
-
-
-class StarshipClassSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = StarshipClass
-        fields = ('description',)
 
 
 class StarshipSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Starship
-        fields = ('name', 'record', 'starship_class')
+        fields = ('name', 'record')
 
 
 class PlanetSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Planet
         fields = ('planet_name',)
-
-
-class IdiomSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Idiom
-        fields = ('description',)
 
 
 class SpeciesSerializer(serializers.HyperlinkedModelSerializer):
@@ -38,15 +26,5 @@ class CrewmanSerializer(serializers.HyperlinkedModelSerializer):
         fields = (
             'name',
             'species',
-            'idiom',
             'starship'
         )
-
-
-
-
-
-
-
-
-

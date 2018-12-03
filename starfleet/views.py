@@ -1,36 +1,23 @@
-from .models import StarshipClass, Starship, Planet, Idiom, Species, Crewman
+from .models import Starship, Planet, Species, Crewman
 from rest_framework import viewsets
-from .serializers import StarshipClassSerializer, StarshipSerializer, PlanetSerializer, IdiomSerializer, \
-    SpeciesSerializer, CrewmanSerializer
-
-
-class StarshipClassViewSet(viewsets.ModelViewSet):
-    queryset = StarshipClass.objects.all()
-    serializer_class = StarshipClassSerializer
+from . import serializers
 
 
 class StarshipViewSet(viewsets.ModelViewSet):
     queryset = Starship.objects.all()
-    serializer_class = StarshipSerializer
+    serializer_class = serializers.StarshipSerializer
 
 
 class PlanetViewSet(viewsets.ModelViewSet):
     queryset = Planet.objects.all()
-    serializer_class = PlanetSerializer
-
-
-class IdiomViewSet(viewsets.ModelViewSet):
-    queryset = Idiom.objects.all()
-    serializer_class = IdiomSerializer
+    serializer_class = serializers.PlanetSerializer
 
 
 class SpeciesViewSet(viewsets.ModelViewSet):
     queryset = Species.objects.all()
-    serializer_class = SpeciesSerializer
+    serializer_class = serializers.SpeciesSerializer
 
 
 class CrewmanViewSet(viewsets.ModelViewSet):
     queryset = Crewman.objects.all()
-    serializer_class = CrewmanSerializer
-
-
+    serializer_class = serializers.CrewmanSerializer
