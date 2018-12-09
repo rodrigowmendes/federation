@@ -23,6 +23,9 @@ class Species(models.Model):
     description = models.TextField(max_length=50)
     planet_of_origin = models.ForeignKey(Planet, on_delete=models.CASCADE)
 
+    class Meta:
+        verbose_name_plural = "species"
+
     def __str__(self):
         return '{0}, {1}'.format(
             self.description,
@@ -34,6 +37,9 @@ class Crewman(models.Model):
     name = models.TextField(max_length=50)
     species = models.ManyToManyField(Species)
     starship = models.ForeignKey(Starship, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name_plural = "crewmen"
 
     def __str__(self):
         return '{0}, {1}'.format(
