@@ -1,34 +1,34 @@
 # Federation
 
-Uma API REST para um banco de dados hipotético da Federação Dos Planetas Unidos, de Star Trek.
+A REST API for a hypothetical database of the United Federation of Planets
 
-## Uso: 
+## Usage: 
 
-Depois de clonar o repositório para o seu computador:
+After cloning the repository:
 
 `cd federation`
 
 
-Instalando os requisitos:
+Install the requirements:
 
 `pip3 install -r requirements.txt`
 
 
-Migrando o banco de dados:
+Migrate the database:
 
 `python3 manage.py migrate` 
 
 
-Criando um super usuário:
+Create a superuser:
 
 `python3 manage.py createsuperuser`
 
 
-Subindo o servidor:
+Star the server:
 
 `python3 manage.py runserver`
 
 
-Vida longa e próspera!  
+Live long and prosper!  
 
 
