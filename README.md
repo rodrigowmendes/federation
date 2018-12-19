@@ -5,6 +5,7 @@ A REST API for a hypothetical database of the United Federation of Planets
 ## Usage: 
 
 Clone the repository:
+
 `$ git clone https://github.com/rodrigowmendes/federation.git`
 
 Change directory:
