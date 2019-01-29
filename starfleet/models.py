@@ -11,11 +11,15 @@ class Planet(models.Model):
 class Starship(models.Model):
     name = models.TextField(max_length=50)
     record = models.TextField(max_length=50)
+    
+    def number_of_crew(self):
+        return Crewman.objects.filter(starship=self.id).count()
 
     def __str__(self):
         return '{0}, {1}'.format(
             self.name,
-            self.record
+            self.record,
+            self.number_of_crew
         )
 
 

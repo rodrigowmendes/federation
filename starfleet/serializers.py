@@ -5,7 +5,7 @@ from rest_framework import serializers
 class StarshipSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Starship
-        fields = ('name', 'record')
+        fields = ('name', 'record', 'number_of_crew')
 
 
 class PlanetSerializer(serializers.HyperlinkedModelSerializer):
