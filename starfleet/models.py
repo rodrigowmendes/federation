@@ -39,7 +39,7 @@ class Species(models.Model):
 
 class Crewman(models.Model):
     name = models.TextField(max_length=50)
-    species = models.ManyToManyField(Species)
+    species = models.ForeignKey(Species, on_delete=models.CASCADE)
     starship = models.ForeignKey(Starship, on_delete=models.CASCADE)
 
     class Meta:
