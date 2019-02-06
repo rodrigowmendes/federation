@@ -12,7 +12,7 @@ class Starship(models.Model):
     name = models.TextField(max_length=50)
     record = models.TextField(max_length=50)
     
-    def number_of_crew(self):
+    def count_number_of_crew(self):
         return Crewman.objects.filter(starship=self.id).count()
 
     def __str__(self):

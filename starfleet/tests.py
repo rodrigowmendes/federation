@@ -5,7 +5,7 @@ from .models import Starship, Crewman, Species, Planet
 # Create your tests here.
 class StarshipModelTests(TestCase):
 
-    def test_number_of_crew(self):
+    def test_count_number_of_crew(self):
         # creating planets instances
         vulcan_planet = Planet.objects.create(planet_name='Vulcan')
         earth_planet = Planet.objects.create(planet_name='Earth')
@@ -30,5 +30,5 @@ class StarshipModelTests(TestCase):
         spock.save()
         scotty.save()
 
-        self.assertIs(starship.number_of_crew(), 3)
+        self.assertIs(starship.count_number_of_crew(), 3)
 
