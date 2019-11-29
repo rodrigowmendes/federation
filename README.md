@@ -1,38 +1,38 @@
 # Federation
 
-A REST API for a hypothetical database of the United Federation of Planets
+Uma API REST para um banco de dados hipotético de naves da Federação dos Planetas Unidos, de Star Trek
 
 ## Usage: 
 
-Clone the repository:
+Clone o repositório:
 
 `$ git clone https://github.com/rodrigowmendes/federation.git`
 
-Change directory:
+Mude de diretório:
 
 `$ cd federation`
 
 
-Install the requirements:
+Instale as dependências:
 
 `$ pip3 install -r requirements.txt`
 
 
-Migrate the database:
+Crie o banco de dados:
 
 `$ python3 manage.py migrate` 
 
 
-Create a superuser:
+Crie um superusuário:
 
 `$ python3 manage.py createsuperuser`
 
 
-Star the server:
+Inicie o servidor:
 
 `$ python3 manage.py runserver`
 
 
-Live long and prosper!  
+Vida longa e próspera!  
 
 
