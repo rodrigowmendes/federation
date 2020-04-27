@@ -20,6 +20,7 @@ Crie o arquivo com as variáveis de ambiente e altere-o como desejado:
 
 
 Suba o ambiente (necessário Docker e docker-compose instalados):
+
 `$ docker-compose up -d`
 
 
