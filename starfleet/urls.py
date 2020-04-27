@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register(r'starships', views.StarshipViewSet)
 router.register(r'planets', views.PlanetViewSet)
 router.register(r'species', views.SpeciesViewSet)
-router.register(r'crewmen', views.CrewmanViewSet)
+router.register(r'fleetmember', views.FleetMemberViewSet)
 
 
 urlpatterns = [

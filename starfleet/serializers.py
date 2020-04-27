@@ -1,4 +1,4 @@
-from .models import Starship, Planet, Species, Crewman
+from .models import Starship, Planet, Species, FleetMember
 from rest_framework import serializers
 
 
@@ -20,9 +20,9 @@ class SpeciesSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('description', 'planet_of_origin')
 
 
-class CrewmanSerializer(serializers.HyperlinkedModelSerializer):
+class FleetMemberSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Crewman
+        model = FleetMember
         fields = (
             'name',
             'species',

@@ -11,15 +11,11 @@ class Planet(models.Model):
 class Starship(models.Model):
     name = models.TextField(max_length=50)
     record = models.TextField(max_length=50)
-    
-    def count_number_of_crew(self):
-        return Crewman.objects.filter(starship=self.id).count()
 
     def __str__(self):
         return '{0}, {1}'.format(
             self.name,
-            self.record,
-            self.number_of_crew
+            self.record
         )
 
 
@@ -37,13 +33,13 @@ class Species(models.Model):
         )
 
 
-class Crewman(models.Model):
+class FleetMember(models.Model):
     name = models.TextField(max_length=50)
     species = models.ForeignKey(Species, on_delete=models.CASCADE)
     starship = models.ForeignKey(Starship, on_delete=models.CASCADE)
 
     class Meta:
-        verbose_name_plural = "crewmen"
+        verbose_name_plural = "fleetmembers"
 
     def __str__(self):
         return '{0}, {1}'.format(

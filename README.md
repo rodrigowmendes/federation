@@ -1,16 +1,27 @@
 # Federation
 
-Uma API REST para um banco de dados hipotético de naves da Federação dos Planetas Unidos, de Star Trek
+Uma API REST de membros da Frota Estelar.
 
-## Usage: 
+## Uso: 
 
 Clone o repositório:
 
 `$ git clone https://github.com/rodrigowmendes/federation.git`
 
+
 Mude de diretório:
 
 `$ cd federation`
+
+
+Crie um ambiente virtual:
+
+`$ python3 -m virtualenv venv`
+
+
+Ative seu ambiente virtual:
+
+`$ source venv/bin/activate`
 
 
 Instale as dependências:

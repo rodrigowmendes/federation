@@ -1,4 +1,4 @@
-from .models import Starship, Planet, Species, Crewman
+from .models import Starship, Planet, Species, FleetMember
 from rest_framework import viewsets
 from . import serializers
 
@@ -18,6 +18,6 @@ class SpeciesViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.SpeciesSerializer
 
 
-class CrewmanViewSet(viewsets.ModelViewSet):
-    queryset = Crewman.objects.all()
-    serializer_class = serializers.CrewmanSerializer
+class FleetMemberViewSet(viewsets.ModelViewSet):
+    queryset = FleetMember.objects.all()
+    serializer_class = serializers.FleetMemberSerializer

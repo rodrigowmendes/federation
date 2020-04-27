@@ -92,3 +92,5 @@ db.sqlite3
 # Editors and IDEs
 .idea/
 .vscode/
+
+.env
